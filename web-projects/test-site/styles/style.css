@@ -8,9 +8,9 @@ html {
     margin: 0;
     padding: 20px 0;
     font-size: 60px;
+    letter-spacing:1px;
     text-align: center;
     color: #f9aecb;
-    text-shadow: 6px 3px 5px black;
   }
   
   p, li {
@@ -40,4 +40,8 @@ a{
 
 a:hover{
 color:hotpink;
+}
+
+figcaption{
+  text-align:center;
 }

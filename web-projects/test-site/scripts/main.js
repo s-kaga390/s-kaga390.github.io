@@ -12,8 +12,8 @@ myImage.onclick = ()=>{
     }
     }
     
-let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
+let myButton = document.querySelector("#user");
+let greeting = document.querySelector("#greeting");
 
 //アラートでユーザーに名前を入力させ、ブラウザに名前をデータとして格納
 function setUserName()
@@ -26,17 +26,16 @@ function setUserName()
     else
     {
     localStorage.setItem("name",myName);
-    myHeading.textContent = `Mozillaはかっこいいよ、${myName}`;
+    greeting.textContent = `こんにちわ　${myName}さん`;
     }
 }
 
-//既に名前が設定されていない場合はユーザー入力を求める
 if(!localStorage.getItem("name")){
     setUserName();
 }
 else{
     let storedName = localStorage.getItem("name");
-    myHeading.textContent =`Mozillaはかっこいいよ、${storedName}`;
+    greeting.textContent =`こんにちわ　${storedName}さん`;
 }
 
 myButton.onclick = () =>
