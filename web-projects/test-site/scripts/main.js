@@ -30,7 +30,8 @@ function setUserName()
     }
 }
 
-if(localStorage.getItem("name")){
+//既に名前が設定されていない場合はユーザー入力を求める
+if(!localStorage.getItem("name")){
     setUserName();
 }
 else{
