@@ -1,0 +1,124 @@
+@font-face
+{
+  font-family:'Comfortaa';
+  src: url('fonts/Comfortaa-VariableFont_wght.woff2') format('woff2'),
+url('fonts/Comfortaa-VariableFont_wght.woff') format('woff'),
+url('fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face
+{
+font-family:'Zen';
+src:url('fonts/ZenMaruGothic-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family:'Mplus';
+    src:url('fonts/MPLUSRounded1c-Medium.ttf') format('truetype');
+}
+
+*{
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Comfortaa', cursive,'Mplus','Zen', sans-serif;
+    transition-property: all;
+    transition-duration: 800ms;
+    scroll-behavior: smooth;
+}
+
+/*header*/
+header{
+    background-color: rgb(184, 157, 186);
+    padding:20％;
+    position:fixed;
+    width:100%; 
+    z-index:2;
+}
+/*body*/
+
+.main_container{
+    display:grid;
+    overflow:scroll;
+    grid-auto-flow:column;
+    grid-auto-columns:1fr;  
+    
+
+}
+
+.content{
+    padding-top:100px;
+   min-width:700px; }
+/*about me*/
+
+.about_me{
+background-color:rgb(89, 169, 196);
+height: 900px;
+
+
+}
+
+
+.name_grid
+{
+    display:grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-content: center;
+    align-items:center;
+    justify-items:center;
+    gap:0;
+    width:600px;
+    height:200px;
+    column-gap:40px;
+    margin:20px 20px;
+}
+
+.name_content
+{
+    font-size:6em;
+    color:rgb(228, 231, 244);
+
+}
+
+.name_content.eng
+{
+    font-size:4em;
+}
+.eng
+{
+    
+   
+}
+
+.jp
+{
+    
+}
+
+.firstname
+{
+}
+
+.lastname
+{
+
+}
+
+/*footer*/
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color: rgb(184, 157, 186);
+    opacity:0.7;
+}
+
+/*link*/
+
+a{
+    color:beige;
+    text-decoration: none;
+}
+a:hover{
+color:white;
+}
